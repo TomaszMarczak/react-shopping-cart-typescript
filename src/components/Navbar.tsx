@@ -19,6 +19,7 @@ export default function Navbar() {
           </Nav.Link>
         </Nav>
         <Button
+          onClick={openCart}
           style={{ width: "3rem", height: "3rem", position: "relative" }}
           variant="outline-primary"
           className="rounded-circle"
@@ -44,7 +45,7 @@ export default function Navbar() {
             }}
             className="rounded-circle bg-danger d-flex justify-content-center align-items-center"
           >
-            3
+            {cartQuantity}
           </div>
         </Button>
       </Container>
